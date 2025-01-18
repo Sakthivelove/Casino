@@ -10,6 +10,7 @@ import DynamicCard from './components/DynamicCard';
 import './index.css';
 import GameScreen from './components/GameScreen';
 import GameScreen1 from './components/GameScreen1';
+import UserProfile from './components/UserProfile';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/GameScreen" element={<GameScreen />} />
           <Route path="/GameScreen1" element={<GameScreen1 />} />
           <Route path="/CLayout" element={<Layout children={undefined} />} />
+          <Route path="/profile" element={<UserProfile/>}/>
         </Routes>
       </Layout >
     </BrowserRouter>

@@ -26,7 +26,7 @@ const Sidebar = () => {
         </div>
       </div>
 
-      <div className='bg-[#280A53] p-2 flex-grow'>
+      <div className='bg-[#280A53] p-2 flex-grow rounded-md'>
         <div className="grid grid-cols-2 gap-2">
           {/* Dynamic Cards in Sidebar */}
           <DynamicCard
