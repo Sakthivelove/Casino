@@ -2,7 +2,14 @@
 export default {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      zIndex: {
+        '60': '60',
+        '70': '70',
+        '80': '80',
+        '150':'150'
+      }
+    }
   },
   plugins: [],
 }

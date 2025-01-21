@@ -14,16 +14,16 @@ interface SectionProps {
 
 const GameSection: React.FC<SectionProps> = ({ title, IconComponent, cards }) => {
   return (
-    <div className="flex flex-col gap-1 h-full">
-      <div className="flex items-center gap-2">
+    <div>
+      <div className="flex items-center gap-2 mb-2">
         <IconComponent className="text-white text-lg" />
         <h2 className="text-white font-semibold text-lg">{title}</h2>
-      </div>
-      <div className="grid grid-cols-7 gap-1 h-full">
+          </div>
+      <div className="grid md:grid-cols-7 grid-cols-2 gap-1 md:h-[20vh]">
         {cards.map((card) => (
           <div
             key={card.id}
-            className="bg-cover bg-center bg-no-repeat rounded-md p-2 text-white h-full"
+            className="bg-cover bg-center bg-no-repeat rounded-md p-2 text-white h-[20vh]"
             style={{ backgroundImage: `url('${card.image}')` }}
           >
             {card.title}
